@@ -1,0 +1,12 @@
+<div class="banner">
+    <div class="banner-text">
+        <h1>To do </h1>
+<input type="text" [(ngModel)]="inputData" > <button (click)="add()"> Ajouter </button>
+<div *ngIf="todo.length > 0">
+    <ul *ngFor="let task of todo; index as i;">
+        <li>
+            {{ task }}
+            <button (click)="delete(i)"> Supprimer </button>
+        </li>
+    </ul>
+</div>

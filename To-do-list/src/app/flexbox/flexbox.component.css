@@ -1,0 +1,33 @@
+.banner {
+    color: white;
+    background-color: rgb(25, 92, 216);
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 0px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  
+  }
+.todolist {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: underline;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+
+    
+}
+.done {
+    text-decoration: line-through; color:#ccc;
+}
+ul {
+    list-style: none;
+}
+
+.banner-text {
+    font-style: italic; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

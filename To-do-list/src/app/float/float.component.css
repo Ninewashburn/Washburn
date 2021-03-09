@@ -1,0 +1,16 @@
+header {
+    background-color: rgb(29, 161, 223);
+    margin: 0px 200px 0px 20px;    
+}
+h1 {
+    padding: 10px;
+    text-decoration: underline;
+}
+p {
+    text-align: center;
+    font-size: 30px;
+}
+.box {
+   float: right;
+padding: 19px;
+}
