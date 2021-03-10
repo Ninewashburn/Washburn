@@ -57,3 +57,11 @@ ul {
     font-weight: 300;
     font-family: Arial, sans-serif;
 }
+
+span {
+    margin: 0px 20px 0px 20px;
+}
+
+.bi, .bi-x-square {
+    color: rgb(202, 65, 11);
+}

@@ -18,7 +18,8 @@
             <li *ngIf="tache.done === false">
                 <input type="checkbox" [(ngModel)]="tache.done"/>
                     <span [class]="{'done':tache.done}">{{tache.name}}</span>
-                <input class="fermer" type="checkbox" (click)="taches.splice(i,1)"/>
+                <!-- <input class="fermer" type="checkbox" (click)="taches.splice(i,1)"/> -->
+                <i class="bi bi-x-square" (click)="taches.splice(i,1)"></i>          
             </li>
         </ng-container>
         <br><br><br>
@@ -30,7 +31,8 @@
             <li *ngIf="tache.done === true">
                 <input type="checkbox" [(ngModel)]="tache.done"/>
                     <span [class]="{'done':tache.done}">{{tache.name}}</span>
-                <input class= "fermer" type="checkbox" (click)="taches.splice(i,1)"/>
-            </li>
+                <!-- <input class= "fermer" type="checkbox" (click)="taches.splice(i,1)"/> -->
+                <i class="bi bi-x-square" (click)="taches.splice(i,1)"></i>      
+             </li>
         </ng-container>
     </ul>
