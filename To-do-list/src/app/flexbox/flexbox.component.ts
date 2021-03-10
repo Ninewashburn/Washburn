@@ -11,13 +11,14 @@ export interface Tache {
   styleUrls: ['./flexbox.component.css']
 })
 export class FlexboxComponent implements OnInit {
-  taches: Tache[] = [];
+  taches: Tache[] = []; 
   tache: Tache = {done: false,
   name: ''};
   tachefini: Tache[] = [];
   ticked: boolean = false;
   tacheInput: string='';
-
+  erasetache: boolean = false;
+  
   constructor() {
     this.taches = [];
    }
@@ -35,6 +36,11 @@ export class FlexboxComponent implements OnInit {
     this.taches=[];
   }
   
+  nettoyer(): void {
+    this.tacheInput='';
+  }
+
+}
   // tacheEnd(tachefini: Tache): void {
   //   if (done) {
   //     this.taches.splice(this.taches.indexOf(this.tache), 1);
@@ -47,4 +53,4 @@ export class FlexboxComponent implements OnInit {
     
   //}
   
-}
+

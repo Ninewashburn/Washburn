@@ -1,35 +1,36 @@
 <div class="banner">
-    <div class="banner-text">
-        <h1>To do list </h1>
-    </div>
-   <input class="btn btn-danger" type="button" value="Effacer tout" (click)="effacer()">
-   
-  </div>
-  <br>
-  <br>
-  <div class="todolist"><h1>Chose à faire</h1>
-    <br>
-    <input class="btn btn-primary" type="button" value="Ajouter" (click)="ajouter()">
-
-    <br>
-    <br>
-    <div class="search">
-    <input type="text" [(ngModel)]="tacheInput" name="tache">
-    </div>
-<ul>
-    <ng-container *ngFor="let tache of taches;">
-        <li *ngIf="tache.done === false">
-            <input type="checkbox" [(ngModel)]="tache.done"/>
-            <span [class]="{'done':tache.done}">{{tache.name}}</span>
-        </li>
-    </ng-container>
-        _________________________________________________________________________________________________
-    <ng-container *ngFor="let tache of taches;">
-        <li *ngIf="tache.done === true">
-            <input type="checkbox" [(ngModel)]="tache.done"/>
-            <span [class]="{'done':tache.done}">{{tache.name}}</span>
-        </li>
-    </ng-container>
-        
-</ul>
+<div class="banner-text">
+    <h1>To do list </h1>
 </div>
+                <input class="btn btn-danger" type="button" value="Effacer tout" (click)="effacer()">
+</div>
+        <br><br>
+<div class="todolist"><h1>Chose à faire</h1></div>
+        <br><br><br>
+<div class="search">
+                <input class="btn btn-secondary" type="button" value="Nettoyer" (click)="nettoyer()">
+                <input class="text" type="text" [(ngModel)]="tacheInput" name="tache">
+                <input class="btn btn-primary" type="button" value="Ajouter" (click)="ajouter()">
+</div>
+    <ul>
+        <br><br>
+        <ng-container *ngFor="let tache of taches; let i = index">
+            <li *ngIf="tache.done === false">
+                <input type="checkbox" [(ngModel)]="tache.done"/>
+                    <span [class]="{'done':tache.done}">{{tache.name}}</span>
+                <input class="fermer" type="checkbox" (click)="taches.splice(i,1)"/>
+            </li>
+        </ng-container>
+        <br><br><br>
+ <div class="line">
+     ____________________________________________________________________________________________________________________________
+</div>
+        <br><br><br>
+        <ng-container *ngFor="let tache of taches; let i = index">
+            <li *ngIf="tache.done === true">
+                <input type="checkbox" [(ngModel)]="tache.done"/>
+                    <span [class]="{'done':tache.done}">{{tache.name}}</span>
+                <input class= "fermer" type="checkbox" (click)="taches.splice(i,1)"/>
+            </li>
+        </ng-container>
+    </ul>

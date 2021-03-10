@@ -7,22 +7,21 @@
     align-items: center;
     padding: 0px 20px 0px 20px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-  
-  }
-.todolist {
+}
+
+  .todolist {
     display: flex;
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
     text-decoration: underline;
     font-family: Georgia, 'Times New Roman', Times, serif;
-
-
-    
 }
+
 .done {
     text-decoration: line-through; color:#ccc;
 }
+
 ul {
     list-style: none;
 }
@@ -30,4 +29,31 @@ ul {
 .banner-text {
     font-style: italic; 
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.search {
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text {
+    height: 36px; 
+    width: 450px;
+    background-color: rgb(160, 220, 255);
+    border: none;
+}
+
+.line {
+    display: flex;
+    justify-content: center;
+    font-weight: 1000;
+}
+
+.fermer {
+    color: rgba(0, 0, 0, 0);
+    font-weight: 300;
+    font-family: Arial, sans-serif;
 }
