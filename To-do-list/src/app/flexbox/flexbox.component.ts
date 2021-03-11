@@ -28,7 +28,7 @@ export class FlexboxComponent implements OnInit {
 
   ajouter(): void {
     if (this.tacheInput!=='' && !this.taches.map(x => x.name).includes(this.tacheInput)) {
-    this.taches.push({done:false, name: this.tacheInput});
+    this.taches.push({done:false, name: this.tacheInput}); this.tacheInput='';
   }
   }
   

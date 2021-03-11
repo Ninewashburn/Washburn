@@ -9,8 +9,10 @@
         <br><br><br>
 <div class="search">
                 <input class="btn btn-secondary" type="button" value="Nettoyer" (click)="nettoyer()">
-                <input class="text" type="text" [(ngModel)]="tacheInput" name="tache">
+                <input class="text" type="text" [(ngModel)]="tacheInput" name="tache" (keydown.enter)="ajouter()">
                 <input class="btn btn-primary" type="button" value="Ajouter" (click)="ajouter()">
+                
+
 </div>
     <ul>
         <br><br>
